@@ -1,0 +1,160 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$quantity: 100;
+@mixin box() {
+  width: 100%;
+  border-radius: 15px;
+}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.sa {
+  text-align: center;
+  background-color: #e3ecec49;
+  clear: both;
+  margin-bottom: 400px;
+  border-radius: 20px;
+  .sac {
+    padding: 40px 0;
+    .s {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      color: #000;
+    }
+    .box {
+      position: relative;
+      .sig {
+        text-align: left;
+        color: #333;
+        $number: 10px;
+        label {
+          display: block;
+          margin-top: $number + 20px;
+          &:nth-child(1) {
+            margin-top: $number + 30px;
+          }
+          &.active {
+            color: red;
+          }
+          &.-game {
+            background-color: #000;
+          }
+          font: {
+            size: 18px;
+            weight: 700;
+          }
+        }
+        input {
+          padding: 12px 10px;
+          border-radius: 8px;
+          outline: none;
+          border: 1px solid #ccc;
+          &:hover {
+            box-shadow: 0 5px 10px 1px rgba(46, 46, 46, 0.3);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Quantity should be the same in PUG
+$quantity: 130;
+.firefly {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 50%;
+  height: 50%;
+  margin: -0.2vw 0 0 9.8vw;
+  animation: ease 2s alternate infinite;
+  pointer-events: none;
+  background: url(./accest/css/moth_12468593.gif) no-repeat center/cover;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: 8vw;
+    background: url(./accest/css/moth_12468593.gif) no-repeat center/cover;
+  }
+
+  &::before {
+    background: yellow;
+    opacity: 0.5;
+    animation: drift ease alternate infinite;
+  }
+
+  &::after {
+    background: white;
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw yellow;
+    animation: drift 0.7s ease alternate infinite, flash ease infinite;
+  }
+}
+@keyframes drift {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flash {
+  0%,
+  30%,
+  100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw yellow;
+  }
+  5% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.4vw yellow;
+  }
+}
+@for $i from 1 through $quantity {
+  $x: random(100) - 50;
+  $y: random(100) - 50;
+  $scale: (random(75) / 100) + 0.25;
+  $steps: random(12) + 16;
+  $flashTime: (random(6000) + 5000) * 1ms;
+  $flashDelay: (random(8000) + 500) * 1ms;
+
+  .firefly:nth-child(#{$i}) {
+    animation-name: move#{$i};
+
+    &::before {
+      animation-duration: #{$steps}s;
+    }
+
+    &::after {
+      animation-duration: #{$steps}s, $flashTime;
+      animation-delay: 0ms, $flashDelay;
+    }
+  }
+
+  @keyframes move#{$i} {
+    $randomXStart: random(100) - 50;
+    $randomYStart: random(100) - 50;
+    $randomScaleStart: (random(75) / 100) + 0.25;
+
+    $randomXEnd: random(100) - 50;
+    $randomYEnd: random(100) - 50;
+    $randomScaleEnd: (random(75) / 100) + 0.25;
+
+    0% {
+      transform: translateX(#{$randomXStart}vw) translateY(#{$randomYStart}vh)
+        scale(#{$randomScaleStart});
+    }
+    100% {
+      transform: translateX(#{$randomXEnd}vw) translateY(#{$randomYEnd}vh)
+        scale(#{$randomScaleEnd});
+    }
+  }
+}

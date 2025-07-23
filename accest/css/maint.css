@@ -1,0 +1,434 @@
+.t12 {
+    background-color: #f5f5f5;
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.tab {
+    background: #87c122;
+    overflow: hidden;
+    padding: 30px 0 20px;
+    text-align: center;
+
+    .tablinks {
+        color: black;
+    }
+}
+
+/* Style cho các tab */
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab button {
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+
+    position: relative;
+    padding: 12px 30px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #323232;
+    border: 4px solid #fff;
+}
+
+.tab button:hover {
+    background-color: #fff;
+}
+
+.tab button.active {
+    background-color: #fff;
+}
+
+/* Style cho nội dung tab */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: none;
+    border-top: none;
+    animation: fE 1s ease;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.s_wrap {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.line1 {
+    height: 5px;
+    background: #70b521;
+    width: 150px;
+    margin: 0px auto 50px auto;
+}
+.option-sdd {
+    float: left;
+    margin: 10px 14% 50px 14%;
+    width: 80%;
+}
+.space {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0 10px;
+    float: left;
+}
+
+.icon-space {
+    text-align: center;
+    float: left;
+    padding: 10px;
+}
+
+.space1 {
+    float: left;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+}
+
+.setting {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0 10px;
+    float: left;
+    margin-left: 10px;
+}
+.space2 {
+    float: left;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+}
+
+ul, li {
+    list-style: none outside none;
+}
+
+
+.active1 {
+    background-color: #83be13 !important;
+    float: left;
+    color: #fff !important;
+}
+
+.active2 {
+    background: #F58D26;
+    color: #fff !important;
+}
+
+.option-sdd ul {
+    padding: unset;
+}
+
+.space1 ul li,
+.space2 ul li {
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+    font: 20px 'Roboto Condensed', sans-serif;
+    color: #F58D26;
+    cursor: pointer;
+}
+
+.box_inner {
+    overflow: hidden;
+    padding: 0 0 20px 0;
+    width: 100%;
+}
+
+.tabhs2 {
+    border-bottom: 6px solid #83be13;
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 9999;
+}
+
+#tabserver, #tabgoi1, #tabgoi2, #tabgoi3 {
+    background-color: #e6e6e6;
+    color: #838383;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tabcanhan {
+    width: 100%;
+    float: left;
+    font-family: Roboto;
+    margin-top: 20px;
+}
+
+.tabcanhan li {
+    width: 23%;
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    margin: 0 20px 0px 0;
+    display: inline-block;
+}
+
+.khung2 {
+    background-color: #83be13 !important;
+}
+
+.tit1green, .tit1white {
+    text-transform: uppercase;
+}
+
+.tit1green {
+    font-size: 25px;
+    color: #83be13;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.linedotgray {
+    border-bottom: 1px solid #bfbfbf;
+    border-bottom-style: dotted;
+    width: 100%;
+    max-width: 205px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    clear: both;
+}
+
+.price_orange {
+    text-align: center;
+    color: #ffa100;
+    margin-top: 20px;
+}
+
+.size44 {
+    font-size: 36px;
+    font-weight: bold;
+    width: 120%;
+}
+
+.size16 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tabcanhan li ul {
+    margin: 10px;
+}
+
+.tabcanhan li ul li {
+    display: block;
+    background: transparent !important;
+    margin: 0 0 15px 0;
+    text-align: left;
+    color: #646464;
+    font: 14px 'Roboto';
+    width: 100%;
+    padding: 0 10px 0 10px !important;
+}
+
+.text_orange {
+    color: #fc6d0f;
+    font-weight: bold;
+}
+.btndangky {
+    height: 53px;
+    background-color: #83be13;
+    text-align: center;
+    color: #fff;
+    line-height: 53px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 25px auto 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+    border: 0;
+}
+
+.tit1white {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.linedotwhite {
+    border-bottom: 1px solid #fff;
+    border-bottom-style: dotted;
+    width: 100%;
+    max-width: 215px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    clear: both;
+}
+
+.price_white {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.btndangky2 {
+    width: 200px;
+    height: 53px;
+    background-color: #ffa101;
+    text-align: center;
+    color: #fff;
+    line-height: 53px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 25px auto 0;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+}
+
+.corwh {
+    color: #fff !important;
+}
+
+.tabcanhan li form {
+    text-align: center;
+} 
+
+.text-note-price-all {
+    border: 1px dashed #ccc;
+    padding: 20px 0;
+    font-size: 18px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.bosung h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #323232;
+    margin: 30px 0 15px;
+    text-transform: uppercase;
+}
+
+.bosung {
+    background: #fff;
+    margin: 20px 0;
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+
+.nd-bosung {
+    float: left;
+    width: 98.5%;
+    margin: 10px;
+}
+
+.bs {
+    margin: 10px 0;
+}
+
+.bg-grey1 {
+    background: url(https://tenten.vn/landing/ldp-cloud-server/images/icon15.png) 10px 10px no-repeat #ededed;
+    padding: 10px 10px 10px 45px;
+    font: 18px 'Roboto Condensed', sans-serif;
+    text-align: left;
+    margin: 10px 0;
+    float: left;
+    width: 100%;
+}
+
+.bs-bang tbody td {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    color: #fc741b;
+    padding: 10px 0;
+}
+
+.text-grey {
+    color: #2e2e2e;
+}
+
+.bs-bang thead td {
+    background: #e7e7e7;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.box_right {
+    float: right;
+    width: 41%;
+}
+
+.box_left {
+    float: left;
+    width: 49%;
+}
+
+.box_left p:first-child {
+    margin-top: 40px;
+    text-align: justify;
+}
+
+.box_left p {
+    font-size: 18px;
+    background: url(	https://tenten.vn/landing/ldp-cloud-server/images/icon8.png) no-repeat left 3px;
+    padding-left: 30px;
+    margin-top: 30px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.btn_dangkyngay {
+    background: #3c9517;
+    display: block;
+    margin: 0px auto 50px auto;
+    max-width: 270px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    border-bottom: 3px solid #1f5708;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 24px;
+}
+
+.t11 {
+    background: url(https://tenten.vn/landing/ldp-cloud-server/images/bg9.png) no-repeat center bottom;
+    background-size: 100%;
+    height: 125px;
+    float: left;
+    width: 100%;
+}
+
+.client-list > li {
+    float: left;
+    width: 16.666666666667%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
