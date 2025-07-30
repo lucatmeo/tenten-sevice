@@ -60,6 +60,40 @@ body {
     }
   }
 }
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header-nav ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header-nav ul li {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header {
+    background-color: #282c34;
+}
+
+.header-nav ul li {
+    color: #61dafb;
+}
 
 // Quantity should be the same in PUG
 $quantity: 130;
