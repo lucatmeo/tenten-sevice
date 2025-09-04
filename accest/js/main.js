@@ -39,4 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Gọi hàm để tải và chèn footer
   loadHtmlIntoElement('/footer.html', 'footerIndex');
+
+  $(".headerIndex").load("header.html");
+  $(".footerIndex").load("footer.html");
 });
